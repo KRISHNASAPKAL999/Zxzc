@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/nameupd"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:hint="New Name"
+        android:textSize="19dp" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="New gmail"
+        android:id="@+id/gmailupd"
+        android:textSize="19dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="New Phone no"
+        android:id="@+id/phoneupd"
+        android:textSize="19dp"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatebtn"
+        android:text="UPDATE"
+        android:gravity="center"/>
+
+
+</LinearLayout>

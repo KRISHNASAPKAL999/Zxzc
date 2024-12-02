@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_registerback"
+    android:layout_height="match_parent"
+    tools:context=".Notification">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upnavigation"
+
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appshape"
+
+            android:text="NOTIFICATION"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:id="@+id/nonotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No Notification"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firstContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/appshape"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:scaleType="centerCrop"
+                android:text="ACCEPT"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <TextView
+                android:id="@+id/namelist10"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="128dp"
+                android:layout_toEndOf="@+id/button1"
+                android:text="NAME    :"
+                android:textColor="@color/black"
+
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/unitsneededlist10"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/name1"
+
+                android:layout_marginStart="128dp"
+                android:layout_toEndOf="@id/button1"
+
+
+                android:text="PNONE  :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+            <TextView
+                android:id="@+id/timelist1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:layout_toEndOf="@id/button1"
+                android:text="UTIME   :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.393"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.990" />
+
+            <TextView
+                android:id="@+id/bloodgrouplist15"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitsneeded1"
+
+                android:layout_marginStart="128dp"
+
+                android:layout_toEndOf="@id/button1"
+                android:text="BGROUP:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/name1"
+                android:text="Name"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.867"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/unitsneeded15"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="196dp"
+
+
+                android:text="units needed"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.629" />
+
+            <TextView
+                android:id="@+id/bloodgroup1"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_marginStart="196dp"
+
+
+                android:text="BLOOD GROUP"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.362" />
+
+            <TextView
+                android:id="@+id/TIME1"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_marginEnd="28dp"
+
+                android:text="TIME"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/SecondContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appshape"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/imgsrc"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red"
+                android:scaleType="centerCrop"
+                android:text="ACCEPT"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/namelist1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imgsrc"
+                android:text="NAME    :"
+                android:textColor="@color/black"
+
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unitsneededlist1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/namelist"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="-21dp"
+                android:layout_toEndOf="@+id/imgsrc"
+
+
+                android:text="PHONE  :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bloodgrouplist1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/unitsneededlist"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="-40dp"
+                android:layout_toEndOf="@+id/imgsrc"
+                android:text="UTIME   :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bloodgrouplist2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/unitsneededlist"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="-21dp"
+                android:layout_toEndOf="@+id/imgsrc"
+                android:text="BGROUP:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/namelist"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="77dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/imgsrc"
+                android:text="Name"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unitsneededlist"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/namelist"
+                android:layout_marginStart="76dp"
+                android:layout_marginBottom="-21dp"
+                android:layout_toEndOf="@+id/imgsrc"
+
+                android:text="units needed"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bloodgrouplist"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/unitsneededlist"
+                android:layout_marginStart="78dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toEndOf="@+id/imgsrc"
+
+                android:text="BLOOD GROUP"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TIME"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/unitsneededlist"
+                android:layout_marginStart="77dp"
+                android:layout_marginBottom="-39dp"
+                android:layout_toEndOf="@+id/imgsrc"
+                android:text="TIME"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/thirdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/appshape"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:scaleType="centerCrop"
+                android:text="ACCEPT"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="128dp"
+                android:layout_toEndOf="@+id/button1"
+                android:text="NAME    :"
+                android:textColor="@color/black"
+
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+
+
+                android:layout_marginStart="128dp"
+
+
+                android:text="PHONE  :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="UTIME   :"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.393"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.990" />
+
+            <TextView
+                android:id="@+id/bloodgrouplist10"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitsneeded1"
+
+                android:layout_marginStart="128dp"
+
+
+                android:text="BGROUP:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345" />
+
+            <TextView
+                android:id="@+id/name11"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_alignParentTop="true"
+
+                android:text="Name"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.867"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/unitsneeded1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="196dp"
+
+
+                android:text="units needed"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.629" />
+
+            <TextView
+                android:id="@+id/bloodgroup11"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_marginStart="196dp"
+
+
+                android:text="BLOOD GROUP"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.362" />
+
+            <TextView
+                android:id="@+id/TIME11"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+
+                android:layout_marginEnd="28dp"
+
+                android:text="TIME"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/login_registerback"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottommenuformaps" />
+
+
+</LinearLayout>

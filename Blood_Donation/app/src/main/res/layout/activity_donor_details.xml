@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donor_Details">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONOR DETAILS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/SUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="40dp"
+        android:hint="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:hint="fullname"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/AREA"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:gravity="center"
+        android:hint="TYPE YOUR AREA"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <EditText
+        android:id="@+id/phone_r"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:hint="Mobile no"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+
+    <TextView
+        android:id="@+id/blood_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:text="blood group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447">
+
+        <RadioButton
+            android:id="@+id/MALE"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+
+            android:text="MALE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.367"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+
+            android:text="FEMALE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.476" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/bloodgroups"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406">
+
+        <RadioButton
+            android:id="@+id/Opos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="O+" />
+
+        <RadioButton
+            android:id="@+id/Oneg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="O-" />
+
+        <RadioButton
+            android:id="@+id/Apos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="A+" />
+
+        <RadioButton
+            android:id="@+id/Aneg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="A-" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/bloodgroups1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479">
+
+        <RadioButton
+            android:id="@+id/Bpos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="B+" />
+
+        <RadioButton
+            android:id="@+id/Bneg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="B-" />
+
+        <RadioButton
+            android:id="@+id/Abpos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="Ab+" />
+
+        <RadioButton
+            android:id="@+id/Abneg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@android:color/transparent"
+            android:text="Abneg" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/getCurrentLocation"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Click for current location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        tools:layout_editor_absoluteX="4dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

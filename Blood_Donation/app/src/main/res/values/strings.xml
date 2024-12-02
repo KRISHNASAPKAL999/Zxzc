@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Blood_Donation</string>
+    <string name="title_activity_getcurrent_location">getcurrentLocation</string>
+    <string name="title_activity_donor_location">DonorLocation</string>
+    <string name="My_api_key">AIzaSyACgXzGVyxphCWzAS7ILVmGC9AumlQoOn4</string>
+
+
+    <string name="h1">pehla</string>
+    <string name="h2">dusra</string>
+    <string name="h3">teesra</string>
+    <string name="h4">chautha</string>
+    <string name="title_activity_reciver_adddress">Reciver_adddress</string>
+    <string name="slogan1">Give the gift of life – Donate blood  \n and help save lives.   \n   Your donation offers\n   hope and a second chance</string>
+    <string name="slogan2">  Your donation, their salvation.\n By donating  blood, you provide  \n    hope and life-saving\n   support to those in \n  urgent need, making a lasting impact.</string>
+    <string name="slogan3">  Be a hero, donate blood today. Your   \ngenerous donation can save   \n  lives, offering\n   hope and a second chance \n   to those in need.</string>
+    <string name="slogon4">  Share your strength – donate blood,   \nsave lives! Your contribution  \n   can make a \n   life-changing difference for\n    patients in urgent need.</string>
+    <string name="slogan5">  "One pint of blood can save up to   \nthree lives. Your small act of  \n   kindness can \n   make a huge difference</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="blood_groups">
+        <item>     Select Blood Group </item>
+        <item>All</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>p</item>
+        <item>AB-</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

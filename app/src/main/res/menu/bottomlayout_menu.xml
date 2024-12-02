@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="DONOR"
+        android:id="@+id/donorlocation"
+        android:icon="@drawable/twotone_location_on_24"/>
+    <item android:title="DONATE"
+        android:id="@+id/donateblood"
+        android:icon="@drawable/twotone_hourglass_top_24"/>
+
+    <item android:title="RECIEVE"
+        android:id="@+id/recieveblood"
+        android:icon="@drawable/twotone_hourglass_bottom_24"/>
+
+</menu>

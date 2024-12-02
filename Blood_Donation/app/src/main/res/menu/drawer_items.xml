@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itemBackground="http://schemas.android.com/apk/res-auto">
+
+    <group
+        >
+        <item
+
+            android:id="@+id/HOME"
+
+
+            android:title="HOME"
+            android:icon="@drawable/twotone_home_24"/>
+
+
+        <item
+
+            android:id="@+id/PROFILE"
+
+            android:title="PROFILE"
+            android:icon="@drawable/profie"/>
+
+        <item android:id="@+id/REFER"
+android:icon="@drawable/twotone_refer"
+
+            android:title="REFER FRIEND"/>
+    </group>
+    <group>
+        <item
+
+            android:id="@+id/DONATE_HISTORY"
+
+            android:icon="@drawable/baseline_history_24"
+            android:title="DONATE HISTORY"
+            />
+
+        <item android:id="@+id/DONOR_DETAIL"
+android:icon="@drawable/twotone_hourglass_top_24"
+            android:title="DONATE BLOOD"/>
+
+        <item android:id="@+id/REQUEST_BLOOD"
+android:icon="@drawable/twotone_hourglass_bottom_24"
+            android:title="REQUEST BLOOD"/>
+    </group>
+
+    <group>
+
+        <item android:id="@+id/HOSPITAL_LOCATION"
+android:icon="@drawable/twotone_hospital"
+            android:title="HOSPITAL LOCATION"/>
+
+        <item android:id="@+id/blood_bank"
+android:icon="@drawable/twotone_bloodbank"
+            android:title="BLOOD BANK NEAR ME"/>
+
+        <item android:id="@+id/DONOR_NEAR_ME"
+android:icon="@drawable/twotone_donorloc"
+            android:title="DONOR NEAR ME"/>
+    </group>
+
+    <group>
+        <item android:id="@+id/NOTIFICATION"
+android:icon="@drawable/twotone_notification"
+            android:title="NOTIFICATION"/>
+    </group>
+
+    <group>
+        <item android:id="@+id/ABOUT_US"
+android:icon="@drawable/twotone_rate_review_24"
+            android:title="ABOUT US"/>
+
+        <item android:id="@+id/LANGUAGES"
+            android:icon="@drawable/twotone_language_24"
+            android:title="LANGUAGES"/>
+        <item android:id="@+id/LOG_OUT"
+android:icon="@drawable/twotone_logout_24"
+            android:title="LOG OUT"/>
+
+
+
+    </group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

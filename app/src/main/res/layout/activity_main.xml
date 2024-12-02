@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <!-- Main content -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/main_layout"
+            android:id="@+id/includedlayout"/>
+
+        <!-- Drawer content (NavigationView) -->
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            app:itemIconPadding="50dp"
+            app:itemIconSize="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/navback"
+            app:itemTextColor="@color/red"
+            android:layout_marginBottom="15dp"
+            app:itemIconTint="@color/red"
+            app:dividerInsetStart="65dp"
+            app:menu="@menu/drawer_items"
+            app:itemVerticalPadding="10dp"
+            app:headerLayout="@layout/drawer_header"
+            android:layout_gravity="start"/>
+    </FrameLayout>
+    <!-- Set gravity to 'start' for left drawer -->
+
+</androidx.drawerlayout.widget.DrawerLayout>

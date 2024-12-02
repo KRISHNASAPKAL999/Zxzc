@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:backgroundTint="@color/white"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="12dp"
+    android:layout_marginHorizontal="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/appshape"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgsrc"
+            android:text="REMOVE"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:id="@+id/namelist1"
+            android:text="NAME    :"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgsrc"/>
+
+        <TextView
+            android:id="@+id/unitsneededlist1"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/namelist"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="-21dp"
+
+
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="PHONE  :"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/bloodgrouplist1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/unitsneededlist"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="-40dp"
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="ADDRES:"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bloodgrouplist2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/unitsneededlist"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="-21dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="BGROUP:"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/namelist"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="Name"
+            android:textColor="@color/teal_700"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/unitsneededlist"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/namelist"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="-21dp"
+            android:textStyle="bold"
+
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="units needed"
+            android:textColor="@color/teal_700"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/bloodgrouplist"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/unitsneededlist"
+            android:layout_marginStart="78dp"
+            android:layout_marginBottom="-20dp"
+            android:textStyle="bold"
+
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="BLOOD GROUP"
+            android:textColor="@color/teal_700"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/TIME"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/unitsneededlist"
+            android:layout_marginStart="77dp"
+            android:layout_marginBottom="-39dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/imgsrc"
+            android:text="TIME"
+            android:textColor="@color/teal_700"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

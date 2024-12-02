@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/slidingadd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doctor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/sliddingtext"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:layout_height="wrap_content"
+            android:text="\nGive the gift of life – Donate blood\n and help save lives. \nYour donation offers\n hope and a second chance."/>
+    </LinearLayout>
+
+</LinearLayout>
